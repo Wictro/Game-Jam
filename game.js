@@ -106,7 +106,7 @@ class Game{
         this.sounds['click'] = document.getElementById("click_audio");
         this.sounds['countdown'] = document.getElementById("countdown_audio");
 
-        this.basePath = `assets/testcharacters/`;
+        this.basePath = `assets/characters/`;
 
         this.squares = [];
         this.images = [];
