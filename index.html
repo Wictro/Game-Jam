@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unknown</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="qrcode.min.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <div id="game">
+            <div id="gridlines"></div>
+        </div>
+    </div>
+    
+    <div id="stats">
+        <label id="status">0/4 thieves found</label>
+        <div id="criminals">
+            <div class="identity" id="character_1">
+                <span><strong>Name: </strong>Unknown</span>
+                <span><strong>Surname: </strong>Unknown</span>
+                <span><strong>ID: </strong>Unknown</span>
+                <span><strong>Crime: </strong>Broke into several high-profile computer networks, including "New York Times", "Yahoo!", and "Microsoft"</span>
+            </div>
+
+            <div class="identity" id="character_2">
+                <span><strong>Name: </strong>Unknown</span>
+                <span><strong>Surname: </strong>Unknown</span>
+                <span><strong>ID: </strong>Unknown</span>
+                <span><strong>Crime: </strong>Possession of unauthorized access devices, interception of wire or electronic communications, and unauthorized access to a federal computer</span>
+            </div>
+
+            <div class="identity" id="character_3">
+                <span><strong>Name: </strong>Unknown</span>
+                <span><strong>Surname: </strong>Unknown</span>
+                <span><strong>ID: </strong>Unknown</span>
+                <span><strong>Crime: </strong>Spread computer viruses on popular games in order to take control and break the games entirely.</span>
+            </div>
+
+            <div class="identity" id="character_4">
+                <span><strong>Name: </strong>Unknown</span>
+                <span><strong>Surname: </strong>Unknown</span>
+                <span><strong>ID: </strong>Unknown</span>
+                <span><strong>Crime: </strong>Pirated games, software, and documents for widespread use</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="start-game-container">
+        <img id="game-title">
+        <button title="Start" id="start-game-button" onclick="startGame()">Start</button>
+        <label id="counter">3</label>
+    </div>
+
+    <div id="game-over-container">
+        <div id="qr-container"><div id="qr"></div></div>
+
+        <div id="team-info">
+            <h1>DOKUTECH GAME JAM, 2022</h1>
+            <h3>TEAM VI</h3>
+        </div>
+    </div>
+
+    <audio preload="auto" id="success_audio" type="audio/wav" src="assets/sounds/success.wav"></audio>
+    <audio preload="auto" type="audio/mpeg" id="click_audio" src="assets/sounds/click.mp3"></audio>
+    <audio preload="auto" id="countdown_audio" type="audio/wav" src="assets/sounds/countdown.wav"></audio>
+
+    <script src="game.js"></script>
+</body>
+</html>
