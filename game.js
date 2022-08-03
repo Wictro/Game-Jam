@@ -92,7 +92,7 @@ class Game{
         //         break;
         // }
 
-        this.numCharacters = 2;
+        this.numCharacters = 4;
         this.size = this.level + 1;
 
         this.element.style.gridTemplateColumns = `repeat(${this.size}, 1fr)`;
